@@ -1,0 +1,305 @@
+/*LOG IN STYLE */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 28px 26px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    min-height: 250px;
+    max-width: 650px;
+    margin: 0 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.login-container img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.login-container h2 {
+    margin: 8px 0 15px;
+    color: #2d572c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    background: #17984b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 9px;
+}
+
+.login-container button:hover {
+    background: #137c3b;
+}
+
+.login-container a {
+    display: block;
+    margin-top: 10px;
+    color: #17984b;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+#floatingMessage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    padding-right: 45px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.toggle-password:hover {
+    color: #17984b;
+}
+
+    #caps-warning {
+        display: none;
+        color: orange;
+        font-size: 12px;
+        text-align: left;
+        margin-top: -3px;
+        margin-bottom: 6px;
+    }
+
+@media (max-width: 480px) {
+    .login-container {
+        max-width: 320px;
+        padding: 28px 26px;
+        margin: 5px;
+        width: 75%;
+    }
+
+    .login-container h2 {
+        font-size: 16px;
+    }
+}
+
+/* FORGOT PASSWORD STYLE */
+      .container {
+          background: rgba(255, 255, 255, 0.95);
+          padding: 20px 18px;
+          border-radius: 10px;
+          text-align: center;
+          width: 100%;
+          max-width: 550px;
+          box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+      }
+
+      img {
+          max-width: 150px;
+          margin-bottom: 10px;
+      }
+
+      h2 {
+          margin: 8px 0 15px;
+          color: #2d572c;
+          font-size: 18px;
+          font-weight: bold;
+      }
+
+input[type="email"] {
+    width: 95%;
+    padding: 9px;
+    margin: 8px auto;   /* centers horizontally */
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 13px;
+}
+      button {
+          width: 100%;
+          padding: 10px;
+          background: #17984b;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 14px;
+          cursor: pointer;
+          margin-top: 9px;
+      }
+
+      button:hover {
+          background: #137c3b;
+      }
+
+      a {
+          display: block;
+          margin-top: 10px;
+          color: #17984b;
+          text-decoration: none;
+          font-size: 12px;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      .message {
+          margin-top: 10px;
+          font-size: 13px;
+          color: red;
+      }
+
+      @media only screen and (max-width: 767px) {
+          .container {
+              padding: 15px;
+              border-radius: 8px;
+              margin: 10px;
+              margin-top: -60px;
+          }
+
+          img {
+              max-width: 120px;
+              margin-bottom: 8px;
+          }
+
+          h2 {
+              font-size: 16px;
+              margin: 6px 0 12px;
+          }
+
+          input[type="email"] {
+              font-size: 14px;
+              padding: 10px;
+          }
+
+          button {
+              font-size: 16px;
+              padding: 12px;
+          }
+
+          a {
+              font-size: 14px;
+              margin-top: 8px;
+          }
+
+          .message {
+              font-size: 14px;
+              margin-top: 8px;
+          }
+      }
+/* RESET PASSWORD STYLE */
+    .container {
+          background: rgba(255, 255, 255, 0.95);
+          padding: 20px 18px;
+          border-radius: 10px;
+          text-align: center;
+          width: 100%;
+          max-width: 550px;
+          box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+      }
+
+      img {
+          max-width: 150px;
+          margin-bottom: 10px;
+      }
+
+      h2 {
+          margin: 8px 0 15px;
+          color: #2d572c;
+          font-size: 18px;
+          font-weight: bold;
+      }
+
+      input[type="password"] {
+          width: 100%;
+          padding: 9px;
+          margin: 8px 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 13px;
+      }
+
+      button {
+          width: 100%;
+          padding: 10px;
+          background: #17984b;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          font-size: 14px;
+          cursor: pointer;
+          margin-top: 9px;
+      }
+
+      button:hover {
+          background: #137c3b;
+      }
+
+      a {
+          display: block;
+          margin-top: 10px;
+          color: #17984b;
+          text-decoration: none;
+          font-size: 12px;
+      }
+
+      a:hover {
+          text-decoration: underline;
+      }
+
+      .message {
+          margin-top: 10px;
+          font-size: 13px;
+          color: red;
+      }
+
